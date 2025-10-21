@@ -10,18 +10,13 @@ Um aplicativo de e-commerce moderno desenvolvido em Flutter com integração Str
 ## 📱 Screenshots
 
 ### Tela Inicial e Autenticação
-<img src="1.png" alt="Splash Screen" width="200"/>
-<img src="2.png" alt="Login Screen" width="200"/>
-<img src="3.png" alt="Register Screen" width="200"/>
+![Splash Screen](1.png) ![Login Screen](2.png) ![Register Screen](3.png)
 
 ### Navegação e Produtos
-<img src="4.png" alt="Home Screen" width="200"/>
-<img src="5.png" alt="Products Screen" width="200"/>
-<img src="6.png" alt="Product Details" width="200"/>
+![Home Screen](4.png) ![Products Screen](5.png) ![Product Details](6.png)
 
 ### Carrinho e Checkout
-<img src="7.png" alt="Cart Screen" width="200"/>
-<img src="8.png" alt="Checkout Screen" width="200"/>
+![Cart Screen](7.png) ![Checkout Screen](8.png)
 
 ## ✨ Funcionalidades
 
@@ -223,13 +218,3 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 Se você encontrar algum problema ou tiver dúvidas, abra uma [issue](https://github.com/seu-usuario/escribo-ecommerce/issues) no GitHub.
 
-## 🙏 Agradecimentos
-
-- [Flutter Team](https://flutter.dev/) pelo framework incrível
-- [Supabase](https://supabase.com/) pelo backend robusto
-- [Stripe](https://stripe.com/) pela solução de pagamentos
-- Comunidade Flutter pelo suporte contínuo
-
----
-
-Desenvolvido com ❤️ pela equipe Escribo
