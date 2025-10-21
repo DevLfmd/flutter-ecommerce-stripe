@@ -1,0 +1,74 @@
+name: escribo_ecommerce
+description: E-commerce Flutter app built with FlutterFlow
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Core Flutter packages
+  cupertino_icons: ^1.0.2
+  
+  # HTTP and API
+  http: ^1.1.0
+  dio: ^5.3.2
+  
+  # State Management
+  provider: ^6.0.5
+  riverpod: ^2.4.9
+  flutter_riverpod: ^2.4.9
+  
+  # UI Components
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  
+  # Navigation
+  go_router: ^12.1.1
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Authentication
+  supabase_flutter: ^2.0.0
+  
+  # Utils
+  intl: ^0.19.0
+  uuid: ^4.2.1
+  
+  # Forms and Validation
+  form_builder_validators: ^11.1.2
+  flutter_form_builder: ^9.1.1
+  
+  # Icons
+  font_awesome_flutter: ^10.6.0
+  
+  # Charts and Analytics
+  fl_chart: ^0.66.0
+  
+  # File handling
+  file_picker: ^6.1.1
+  path_provider: ^2.1.1
+  
+  # Notifications
+  flutter_local_notifications: ^16.3.0
+  
+  # Payment Processing
+  flutter_stripe: ^10.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+
+flutter:
+  uses-material-design: true

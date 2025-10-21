@@ -1,0 +1,235 @@
+{
+  "name": "escribo-ecommerce-frontend",
+  "version": "1.0.0",
+  "description": "E-commerce Flutter frontend application built with FlutterFlow",
+  "main": "lib/main.dart",
+  "scripts": {
+    "dev": "flutter run -d chrome --web-port=3001 -t lib/main_simple.dart",
+    "dev:full": "flutter run -d chrome --web-port=3001",
+    "dev:ios": "flutter run -d 7F617DD4-3CDC-4F1C-B58B-C54F67ACB37A",
+    "build:web": "flutter build web",
+    "build:macos": "flutter build macos",
+    "build:ios": "flutter build ios --simulator",
+    "build:android": "flutter build apk",
+    "test": "flutter test",
+    "test:coverage": "flutter test --coverage",
+    "analyze": "flutter analyze",
+    "format": "dart format .",
+    "format:check": "dart format --set-exit-if-changed .",
+    "clean": "flutter clean",
+    "pub:get": "flutter pub get",
+    "pub:upgrade": "flutter pub upgrade",
+    "pub:outdated": "flutter pub outdated",
+    "doctor": "flutter doctor",
+    "devices": "flutter devices",
+    "ios": "flutter run -d 7F617DD4-3CDC-4F1C-B58B-C54F67ACB37A",
+    "emulators": "flutter emulators",
+    "install:web": "flutter install -d chrome",
+    "install:ios": "flutter install -d ios",
+    "hot:reload": "flutter run --hot",
+    "hot:restart": "flutter run --hot-restart",
+    "debug": "flutter run --debug",
+    "release": "flutter run --release",
+    "profile": "flutter run --profile",
+    "logs": "flutter logs",
+    "screenshot": "flutter screenshot",
+    "gen:l10n": "flutter gen-l10n",
+    "gen:icons": "flutter packages pub run flutter_launcher_icons:main",
+    "gen:splash": "flutter packages pub run flutter_native_splash:create",
+    "gen:fonts": "flutter packages pub run flutter_launcher_icons:main",
+    "gen:all": "flutter packages pub run build_runner build --delete-conflicting-outputs",
+    "gen:watch": "flutter packages pub run build_runner watch",
+    "gen:clean": "flutter packages pub run build_runner clean",
+    "hive:generate": "flutter packages pub run build_runner build --delete-conflicting-outputs",
+    "hive:watch": "flutter packages pub run build_runner watch",
+    "hive:clean": "flutter packages pub run build_runner clean",
+    "supabase:init": "supabase init",
+    "supabase:start": "supabase start",
+    "supabase:stop": "supabase stop",
+    "supabase:status": "supabase status",
+    "supabase:db:reset": "supabase db reset",
+    "supabase:db:push": "supabase db push",
+    "supabase:db:pull": "supabase db pull",
+    "supabase:gen:types": "supabase gen types typescript --local > lib/types/supabase.ts",
+    "supabase:functions:serve": "supabase functions serve",
+    "supabase:functions:deploy": "supabase functions deploy",
+    "firebase:init": "firebase init",
+    "firebase:deploy": "firebase deploy",
+    "firebase:serve": "firebase serve",
+    "firebase:emulators": "firebase emulators:start",
+    "docker:build": "docker build -t escribo-ecommerce-frontend .",
+    "docker:run": "docker run -p 3001:3001 escribo-ecommerce-frontend",
+    "docker:stop": "docker stop escribo-ecommerce-frontend",
+    "docker:clean": "docker rmi escribo-ecommerce-frontend",
+    "deploy:web": "flutter build web && firebase deploy --only hosting",
+    "deploy:functions": "firebase deploy --only functions",
+    "deploy:all": "firebase deploy",
+    "precommit": "dart format . && flutter analyze && flutter test",
+    "prepush": "dart format --set-exit-if-changed . && flutter analyze && flutter test --coverage",
+    "ci": "flutter doctor && flutter pub get && flutter analyze && flutter test --coverage && flutter build web",
+    "setup": "flutter doctor && flutter pub get && flutter gen-l10n",
+    "reset": "flutter clean && flutter pub get && flutter gen-l10n",
+    "update": "flutter upgrade && flutter pub upgrade",
+    "check": "flutter doctor -v && flutter pub deps && flutter analyze",
+    "size:analyze": "flutter build apk --analyze-size",
+    "size:web": "flutter build web --analyze-size",
+    "performance": "flutter run --profile --trace-startup",
+    "memory": "flutter run --profile --trace-startup --verbose",
+    "network": "flutter run --profile --trace-startup --verbose --dart-define=FLUTTER_WEB_USE_SKIA=true",
+    "web:dev": "flutter run -d chrome --web-port=3001 --web-renderer html",
+    "web:canvaskit": "flutter run -d chrome --web-port=3001 --web-renderer canvaskit",
+    "web:skia": "flutter run -d chrome --web-port=3001 --web-renderer skia",
+    "web:debug": "flutter run -d chrome --web-port=3001 --debug",
+    "web:release": "flutter run -d chrome --web-port=3001 --release",
+    "web:profile": "flutter run -d chrome --web-port=3001 --profile"
+  },
+  "keywords": [
+    "flutter",
+    "dart",
+    "ecommerce",
+    "shopping",
+    "mobile",
+    "web",
+    "desktop",
+    "supabase",
+    "firebase",
+    "riverpod",
+    "provider",
+    "go_router",
+    "responsive",
+    "pwa",
+    "spa"
+  ],
+  "author": "Escribo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/escribo/escribo-ecommerce-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/escribo/escribo-ecommerce-frontend/issues"
+  },
+  "homepage": "https://github.com/escribo/escribo-ecommerce-frontend#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "nodemon": "^3.0.0",
+    "concurrently": "^8.0.0",
+    "cross-env": "^7.0.0",
+    "rimraf": "^5.0.0",
+    "chokidar": "^3.5.0",
+    "wait-on": "^7.0.0",
+    "livereload": "^0.9.0",
+    "browser-sync": "^2.29.0",
+    "http-server": "^14.0.0",
+    "serve": "^14.0.0",
+    "express": "^4.18.0",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.5.0",
+    "semantic-release": "^21.0.0",
+    "conventional-changelog": "^3.1.0",
+    "conventional-changelog-cli": "^2.2.0",
+    "all-contributors-cli": "^6.20.0"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.0.0",
+    "http-server": "^14.0.0",
+    "serve": "^14.0.0",
+    "livereload": "^0.9.0",
+    "browser-sync": "^2.29.0",
+    "chokidar": "^3.5.0",
+    "wait-on": "^7.0.0",
+    "concurrently": "^8.0.0",
+    "cross-env": "^7.0.0",
+    "rimraf": "^5.0.0",
+    "nodemon": "^3.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{dart,js,ts,json,md}": [
+      "dart format",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "standard-version": {
+    "skip": {
+      "changelog": true
+    }
+  },
+  "semantic-release": {
+    "branches": [
+      "main",
+      "develop"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
+  },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ],
+    "packageRules": [
+      {
+        "updateTypes": [
+          "minor",
+          "patch"
+        ],
+        "automerge": true
+      }
+    ]
+  },
+  "dependabot": {
+    "version": 2,
+    "updates": [
+      {
+        "package-ecosystem": "npm",
+        "directory": "/",
+        "schedule": {
+          "interval": "weekly"
+        }
+      }
+    ]
+  }
+}
